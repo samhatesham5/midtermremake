@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Frijole&family=Rock+Salt&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Don't forget to change to white later*/
+html {
+  color: white;
+  font-family: 'Crimson Text', serif;
+  background-color: black;
+}
+
+
+/*Applying Grid*/
+.heroSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 2vmin;
+  background-image: url('https://github.com/samhatesham5/firstsite2021/blob/main/mega-gif.gif?raw=true');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+/*navBar*/
+ a, .date {
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: 4vmin;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E1AD01;
+}
+
+.aboutPage {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.musicBar {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+/*Rest of Hero Section*/
+
+.subHeader {
+  grid-column: 1 / span 6;
+  grid-row: 2 /span 3 ;
+  text-align: center;
+  font-size: 3vmin;
+  font-family: 'Rock Salt', cursive;
+}
+
+ #heroText {
+   text-align: center;
+   font-size: 15vmin;
+   font-family: 'Frijole', cursive;
+   color: #a93725;
+ }
+
+.date {
+  grid-row: 4/ 5;
+  grid-column: 5;
+  transform: rotate(90deg);
+  font-size: 2.5vmin;
+  padding-bottom: 150px;
+}
+
+/*About Me Section*/
+
+.aboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 2vw;
+  padding-top: 7vw;
+  height: 105vh;
+  width: 100%;
+  background-image: url('https://static.wixstatic.com/media/42db64_7cf64333ca974da9bffb9d5aa76d6415~mv2.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clayImage{
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 4vmin;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+}
+
+.clayOne {
+  width: 40vmin;
+}
+
+.aboutText {
+  grid-column: 3 / span 5;
+  grid-row: 2;
+  font-size: 3vmin;
+}
+
+/*Songs Section*/
+#music {
+  grid-column: 2  /span 4;
+  grid-row: 1;
+  text-align: center;
+  background-image: url('https://static.wixstatic.com/media/42db64_7cf64333ca974da9bffb9d5aa76d6415~mv2.gif');
+  font-family: 'Rock Salt', cursive;
+  font-size: 5vmax;
+  color: #c1bbbc;
+}
+
+.songsSection {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 2vmin;
+  padding: 5vmin;
+  background-image: url('https://static.wixstatic.com/media/42db64_7cf64333ca974da9bffb9d5aa76d6415~mv2.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.singleOne {
+  grid-column: 1/span 2;
+  grid-row: 2;
+  background-image: url('https://i.pinimg.com/564x/42/6e/0e/426e0e24d359c052c6fcc23054215eae.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-gap: 2vmin;
+  width: 25vmax;
+}
+
+.singleTwo {
+  grid-column: 3/span 4;
+  grid-row: 2;
+  background-image: url('https://i.pinimg.com/564x/1a/b5/1f/1ab51ffab7ebfd6239d1fb51581ae9d6.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-gap: 2vmin;
+  width: 25vmax;
+}
+
+.singleThree {
+  grid-column: 5/span 6;
+  grid-row: 2;
+  background-image: url('https://i.pinimg.com/564x/cd/1e/2e/cd1e2ef687736126739a1215c6dd8174.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-gap: 2vmin;
+  width: 25vmax;
+}
+
+.containerMusic {
+  opacity: 0;
+  transition: .5;
+}
+
+.singleOne:hover .containerMusic{
+  opacity: 1;
+  background: rgba(0, 0, 0, .6);
+}
+
+.singleTwo:hover .containerMusic{
+  opacity: 1;
+  background: rgba(0, 0, 0, .6);
+}
+
+.singleThree:hover .containerMusic{
+  opacity: 1;
+  background: rgba(0, 0, 0, .6);
+}
+
+
+.text {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+
+
+/*Spotify Section*/
+
+.spotifySection {
+  display: grid;
+  grid-template-columns: repeat (5,1fr);
+  grid-template-rows: repeat (2, 1fr);
+  height: 100vh;
+  background-image: url('https://static.wixstatic.com/media/42db64_7cf64333ca974da9bffb9d5aa76d6415~mv2.gif');
+  padding: 5vmin;
+}
+
+.checkOut {
+  grid-column: 2/ span 3;
+  grid-row: 1;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: 5vmax;
+  color: #E1AD01;
+}
+
+
+iframe {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+footer {
+  text-align: center;
+}
+
+/*Media Query*/
+
+@media only screen and (min-width: 992px) {
+  .aboutPage {
+    grid-column: 1;
+    grid-row: 1 /span 2;
+  }
+
+  .musicBar {
+    grid-column: 1;
+    grid-row: 2 / span 3;
+  }
+
+  .subHeader {
+    grid-row: 3;
+  }
+
+  .date {
+    grid-column: 5/span 6;
+  }
+
+  .aboutText {
+    font-size: 4vmin;
+  }
+
+#music {
+  grid-column: 2 / span 3;
+  text-align: center;
+  padding-left: 15vmin;
+}
+
+
+}
